@@ -129,6 +129,25 @@ python data_generation.py
 
 ## Output
 
+| Method        | Syn6_SHD | Syn6_TPR | Syn6_FDR | fMRI_SHD | fMRI_TPR | fMRI_FDR |
+|---------------|----------|----------|----------|----------|----------|----------|
+| ACD           | 51       | 0.429    | 0.94     | 15       | 0.6      | 0.647    |
+| CD-NOD        | 15       | 0.286    | 0.833    | 20       | 0        | 1        |
+| CDANs         | 36       | 1        | 0.837    | 15       | 0.6      | 0.647    |
+| DYNOTEARS     | 7        | 0        | 0        | 10       | 0        | 0        |
+| GVAR          | 25       | 0        | 1        | 12       | 0.2      | 0.667    |
+| LPCMCI        | 11       | 1        | 0.611    | 17       | 0.5      | 0.706    |
+| NAVAR         | 47       | 0.571    | 0.917    | 12       | 1        | 0.545    |
+| NBCB          | 18       | 1        | 0.72     | 15       | 0.6      | 0.647    |
+| NTS-NOTEARS   | 12       | 0.286    | 0.778    | 5        | 0.5      | 0        |
+| PCMCI         | 18       | 1        | 0.72     | 15       | 0.6      | 0.647    |
+| PCMCI+        | 8        | 1        | 0.533    | 15       | 0.5      | 0.667    |
+| PCTMI         | 31       | 0.857    | 0.833    | 9        | 0.1      | 0        |
+| TCDF          | 25       | 0        | 1        | 11       | 0.2      | 0.6      |
+| TiMINo        | 37       | 0.429    | 0.917    | 18       | 0.5      | 0.722    |
+| VarLiNGAM     | 25       | 0.143    | 0.95     | 18       | 0.2      | 0.833    |
+| oCSE          | 32       | 0.714    | 0.857    | 7        | 0.3      | 0        |
+
 ### Log Files
 - `results_syn6.log`: Detailed results for Syn-6 dataset
 - `results_fmri.log`: Detailed results for fMRI dataset
