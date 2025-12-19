@@ -224,34 +224,35 @@ def main():
     generator = DataGenerator(random_seed=42)
     
     # ========== Experiment 1: Syn-6 Dataset ==========
-    print("\n[1/2] Generating Syn-6 dataset...")
-    syn6_data, syn6_graph = generator.generate_syn6_data(n_samples=1000, lag=2)
-    print(f"Syn-6 data generated: shape {syn6_data.shape}")
-    print(f"True edges: {len(syn6_graph['edges'])}")
-    print(f"Changing modules: {syn6_graph['changing_modules']}")
-    
-    print("\n" + "-"*80)
-    print("Running experiments on Syn-6 dataset")
-    print("-"*80)
-    
-    syn6_runner = ExperimentRunner(
-        data=syn6_data,
-        true_graph=syn6_graph,
-        dataset_name='syn6',
-        max_lag=2
-    )
-    syn6_runner.run_all_algorithms()
+    #print("\n[1/2] Generating Syn-6 dataset...")
+    #syn6_data, syn6_graph = generator.generate_syn6_data(n_samples=1000, lag=2)
+    #print(f"Syn-6 data generated: shape {syn6_data.shape}")
+    #print(f"True edges: {len(syn6_graph['edges'])}")
+    #print(f"Changing modules: {syn6_graph['changing_modules']}")
+    #
+    #print("\n" + "-"*80)
+    #print("Running experiments on Syn-6 dataset")
+    #print("-"*80)
+    #
+    #syn6_runner = ExperimentRunner(
+    #    data=syn6_data,
+    #    true_graph=syn6_graph,
+    #    dataset_name='syn6',
+    #    max_lag=2
+    #)
+    #syn6_runner.run_all_algorithms()
     
     # ========== Experiment 2: fMRI Dataset ==========
-    print("\n\n[2/2] Loading fMRI dataset...")
+    print("\n\n[2/2] Loading finance dataset...")
     try:
         fmri_data, fmri_net, fmri_meta = generator.load_fmri_data(
-            './fMRI',
+            '/content/causal_discovery_on_time_series/finance_mat',
             sim_index=1
         )
         print(f"fMRI ground truth type: {type(fmri_net)}")
         print(f"fMRI ground truth shape: {fmri_net.shape if hasattr(fmri_net, 'shape') else 'no shape'}")
         print(f"fMRI data loaded: shape {fmri_data.shape}")
+        print(f"fMRI data type: {type(fmri_data)}")
         print(f"Simulation {fmri_meta['sim_index']}: "
               f"{fmri_meta['n_subjects']} subjects, "
               f"{fmri_meta['n_timepoints']} timepoints, "
@@ -286,9 +287,9 @@ def main():
                 'max_lag': 1
             }
             fmri_runner = ExperimentRunner(
-                data=fmri_data,
+                data=np.squeeze(fmri_data, axis=-1),
                 true_graph=fmri_graph,  # Use converted format
-                dataset_name='fmri',
+                dataset_name='finance',
                 max_lag=1
             )
             fmri_runner.run_all_algorithms()
@@ -301,8 +302,7 @@ def main():
     print("\n" + "="*80)
     print("All experiments completed!")
     print("Results saved to:")
-    print("  - results_syn6.log, results_syn6.json")
-    print("  - results_fmri.log, results_fmri.json (if fMRI data available)")
+    print("  - results_finance.log, results_finance.json (if finance data available)")
     print("="*80 + "\n")
 
 
