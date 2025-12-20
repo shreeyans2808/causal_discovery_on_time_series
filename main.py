@@ -65,7 +65,7 @@ class ExperimentRunner:
         algorithms = [
             # Constraint-based
             ('PCMCI', self._run_pcmci),
-            ('PCMCI+', self._run_pcmci_plus),
+            #('PCMCI+', self._run_pcmci_plus),
             ('LPCMCI', self._run_lpcmci),
             # ('tsFCI', self._run_tsfci),
             ('CD-NOD', self._run_cdnod),
@@ -246,7 +246,7 @@ def main():
     print("\n\n[2/2] Loading finance dataset...")
     try:
         fmri_data, fmri_net, fmri_meta = generator.load_fmri_data(
-            '/content/causal_discovery_on_time_series/finance_mat',
+            './finance_mat',
             sim_index=1
         )
         print(f"fMRI ground truth type: {type(fmri_net)}")
@@ -280,14 +280,16 @@ def main():
         if isinstance(fmri_net, np.ndarray) and len(fmri_net.shape) == 2:
             # Convert 2D network to temporal format with lag=1
             fmri_graph = {
-                'edges': set((i, j, 1) for i in range(fmri_net.shape[0]) 
-                             for j in range(fmri_net.shape[1]) 
-                             if abs(fmri_net[i, j]) > 0),
+                'edges': set((i, j, 1)
+                    for i in range(fmri_net.shape[0])
+                    for j in range(fmri_net.shape[1])
+                    if i != j and abs(fmri_net[i, j]) > 0),
                 'n_vars': fmri_net.shape[0],
                 'max_lag': 1
             }
+            #print(fmri_data.shape)
             fmri_runner = ExperimentRunner(
-                data=np.squeeze(fmri_data, axis=-1),
+                data=fmri_data,
                 true_graph=fmri_graph,  # Use converted format
                 dataset_name='finance',
                 max_lag=1

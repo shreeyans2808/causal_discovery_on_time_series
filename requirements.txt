@@ -15,7 +15,7 @@ torchinfo
 torchviz
 timm
 einops
-xformers
+#xformers
 
 # Hugging Face / GenAI
 transformers

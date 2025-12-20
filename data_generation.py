@@ -110,10 +110,10 @@ class DataGenerator:
         Nnodes = int(mat_data['Nnodes'][0, 0])
         
         # Get first subject's data
-        data = ts[:Ntimepoints, :]
+        data = ts[:Ntimepoints, :, 0]
         
         # Get ground truth network (average across subjects)
-        true_network = np.squeeze(np.mean(net, axis=0))
+        true_network = net[0]
         
         metadata = {
             'n_subjects': Nsubjects,

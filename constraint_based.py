@@ -112,7 +112,7 @@ class ConstraintBasedMethods:
         pcmci = PCMCI(
             dataframe=self.dataframe,
             cond_ind_test=cond_ind_test,
-            verbosity=0
+            verbosity=2
         )
         
         # Run PCMCIplus
