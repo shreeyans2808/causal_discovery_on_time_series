@@ -66,14 +66,14 @@ class ExperimentRunner:
             # Constraint-based
             ('PCMCI', self._run_pcmci),
             #('PCMCI+', self._run_pcmci_plus),
-            ('LPCMCI', self._run_lpcmci),
+            #('LPCMCI', self._run_lpcmci),
             # ('tsFCI', self._run_tsfci),
             ('CD-NOD', self._run_cdnod),
             ('CDANs', self._run_cdans),
             
             # FCM-based
             ('VarLiNGAM', self._run_varlingam),
-            ('TiMINo', self._run_timino),
+            #('TiMINo', self._run_timino),
             
             # Gradient-based
             ('DYNOTEARS', self._run_dynotears),

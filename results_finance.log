@@ -347,3 +347,426 @@ Predicted Edges: 876 | True Edges: 18
 
 [2025-12-20 19:46:29] 
 Running LPCMCI...
+[2025-12-21 00:54:12] 
+================================================================================
+[2025-12-21 00:54:12] Starting experiments on finance dataset
+[2025-12-21 00:54:12] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 00:54:12] ================================================================================
+
+[2025-12-21 00:54:12] 
+Running PCMCI...
+[2025-12-21 00:54:17] PCMCI completed in 4.80 seconds
+[2025-12-21 00:54:17] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 00:54:17] 
+Running LPCMCI...
+[2025-12-21 01:30:44] 
+================================================================================
+[2025-12-21 01:30:44] Starting experiments on finance dataset
+[2025-12-21 01:30:44] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 01:30:44] ================================================================================
+
+[2025-12-21 01:30:44] 
+Running PCMCI...
+[2025-12-21 01:30:48] PCMCI completed in 4.80 seconds
+[2025-12-21 01:30:48] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 01:30:48] 
+Running LPCMCI...
+[2025-12-21 02:18:00] 
+================================================================================
+[2025-12-21 02:18:00] Starting experiments on finance dataset
+[2025-12-21 02:18:00] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 02:18:00] ================================================================================
+
+[2025-12-21 02:18:00] 
+Running PCMCI...
+[2025-12-21 02:18:05] PCMCI completed in 4.78 seconds
+[2025-12-21 02:18:05] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:18:05] 
+Running CD-NOD...
+[2025-12-21 02:18:52] CD-NOD completed in 47.85 seconds
+[2025-12-21 02:18:52] 
+============================================================
+Algorithm: CD-NOD
+TPR: 0.000 | FDR: 1.000 | SHD: 234
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 216
+False Negatives: 18 | True Negatives: 1016
+Predicted Edges: 216 | True Edges: 18
+============================================================
+
+[2025-12-21 02:18:52] 
+Running CDANs...
+[2025-12-21 02:19:13] CDANs completed in 20.54 seconds
+[2025-12-21 02:19:13] 
+============================================================
+Algorithm: CDANs
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:19:13] 
+Running VarLiNGAM...
+[2025-12-21 02:19:28] VarLiNGAM completed in 15.18 seconds
+[2025-12-21 02:19:28] 
+============================================================
+Algorithm: VarLiNGAM
+TPR: 0.222 | FDR: 0.992 | SHD: 509
+Precision: 0.008 | Recall: 0.222 | F1: 0.015
+True Positives: 4 | False Positives: 495
+False Negatives: 14 | True Negatives: 737
+Predicted Edges: 499 | True Edges: 18
+============================================================
+
+[2025-12-21 02:19:28] 
+Running TiMINo...
+[2025-12-21 02:22:10] 
+================================================================================
+[2025-12-21 02:22:10] Starting experiments on finance dataset
+[2025-12-21 02:22:10] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 02:22:10] ================================================================================
+
+[2025-12-21 02:22:10] 
+Running PCMCI...
+[2025-12-21 02:22:15] PCMCI completed in 4.78 seconds
+[2025-12-21 02:22:15] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:22:15] 
+Running CD-NOD...
+[2025-12-21 02:23:02] CD-NOD completed in 47.62 seconds
+[2025-12-21 02:23:02] 
+============================================================
+Algorithm: CD-NOD
+TPR: 0.000 | FDR: 1.000 | SHD: 234
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 216
+False Negatives: 18 | True Negatives: 1016
+Predicted Edges: 216 | True Edges: 18
+============================================================
+
+[2025-12-21 02:23:02] 
+Running CDANs...
+[2025-12-21 02:23:23] CDANs completed in 20.45 seconds
+[2025-12-21 02:23:23] 
+============================================================
+Algorithm: CDANs
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:23:23] 
+Running VarLiNGAM...
+[2025-12-21 02:23:29] VarLiNGAM completed in 6.13 seconds
+[2025-12-21 02:23:29] 
+============================================================
+Algorithm: VarLiNGAM
+TPR: 0.222 | FDR: 0.992 | SHD: 509
+Precision: 0.008 | Recall: 0.222 | F1: 0.015
+True Positives: 4 | False Positives: 495
+False Negatives: 14 | True Negatives: 737
+Predicted Edges: 499 | True Edges: 18
+============================================================
+
+[2025-12-21 02:23:29] 
+Running TiMINo...
+[2025-12-21 02:24:15] 
+================================================================================
+[2025-12-21 02:24:15] Starting experiments on finance dataset
+[2025-12-21 02:24:15] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 02:24:15] ================================================================================
+
+[2025-12-21 02:24:15] 
+Running PCMCI...
+[2025-12-21 02:24:20] PCMCI completed in 4.83 seconds
+[2025-12-21 02:24:20] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:24:20] 
+Running CD-NOD...
+[2025-12-21 02:25:08] CD-NOD completed in 48.17 seconds
+[2025-12-21 02:25:08] 
+============================================================
+Algorithm: CD-NOD
+TPR: 0.000 | FDR: 1.000 | SHD: 234
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 216
+False Negatives: 18 | True Negatives: 1016
+Predicted Edges: 216 | True Edges: 18
+============================================================
+
+[2025-12-21 02:25:08] 
+Running CDANs...
+[2025-12-21 02:25:28] CDANs completed in 20.50 seconds
+[2025-12-21 02:25:28] 
+============================================================
+Algorithm: CDANs
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:25:28] 
+Running VarLiNGAM...
+[2025-12-21 02:25:34] VarLiNGAM completed in 6.21 seconds
+[2025-12-21 02:25:34] 
+============================================================
+Algorithm: VarLiNGAM
+TPR: 0.222 | FDR: 0.992 | SHD: 509
+Precision: 0.008 | Recall: 0.222 | F1: 0.015
+True Positives: 4 | False Positives: 495
+False Negatives: 14 | True Negatives: 737
+Predicted Edges: 499 | True Edges: 18
+============================================================
+
+[2025-12-21 02:25:34] 
+Running TiMINo...
+[2025-12-21 02:27:26] 
+================================================================================
+[2025-12-21 02:27:26] Starting experiments on finance dataset
+[2025-12-21 02:27:26] Data shape: (4000, 25), Max lag: 1
+[2025-12-21 02:27:26] ================================================================================
+
+[2025-12-21 02:27:26] 
+Running PCMCI...
+[2025-12-21 02:27:31] PCMCI completed in 4.82 seconds
+[2025-12-21 02:27:31] 
+============================================================
+Algorithm: PCMCI
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:27:31] 
+Running CD-NOD...
+[2025-12-21 02:28:19] CD-NOD completed in 48.06 seconds
+[2025-12-21 02:28:19] 
+============================================================
+Algorithm: CD-NOD
+TPR: 0.000 | FDR: 1.000 | SHD: 234
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 216
+False Negatives: 18 | True Negatives: 1016
+Predicted Edges: 216 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:19] 
+Running CDANs...
+[2025-12-21 02:28:39] CDANs completed in 20.43 seconds
+[2025-12-21 02:28:39] 
+============================================================
+Algorithm: CDANs
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:39] 
+Running VarLiNGAM...
+[2025-12-21 02:28:45] VarLiNGAM completed in 6.16 seconds
+[2025-12-21 02:28:45] 
+============================================================
+Algorithm: VarLiNGAM
+TPR: 0.222 | FDR: 0.992 | SHD: 509
+Precision: 0.008 | Recall: 0.222 | F1: 0.015
+True Positives: 4 | False Positives: 495
+False Negatives: 14 | True Negatives: 737
+Predicted Edges: 499 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:45] 
+Running DYNOTEARS...
+[2025-12-21 02:28:46] DYNOTEARS completed in 0.76 seconds
+[2025-12-21 02:28:46] 
+============================================================
+Algorithm: DYNOTEARS
+TPR: 0.000 | FDR: 0.000 | SHD: 18
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 0
+False Negatives: 18 | True Negatives: 1232
+Predicted Edges: 0 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:46] 
+Running NTS-NOTEARS...
+[2025-12-21 02:28:46] NTS-NOTEARS completed in 0.01 seconds
+[2025-12-21 02:28:46] 
+============================================================
+Algorithm: NTS-NOTEARS
+TPR: 0.000 | FDR: 0.000 | SHD: 18
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 0
+False Negatives: 18 | True Negatives: 1232
+Predicted Edges: 0 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:46] 
+Running GVAR...
+[2025-12-21 02:28:46] GVAR completed in 0.26 seconds
+[2025-12-21 02:28:46] 
+============================================================
+Algorithm: GVAR
+TPR: 0.222 | FDR: 0.974 | SHD: 166
+Precision: 0.026 | Recall: 0.222 | F1: 0.046
+True Positives: 4 | False Positives: 152
+False Negatives: 14 | True Negatives: 1080
+Predicted Edges: 156 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:46] 
+Running NAVAR...
+[2025-12-21 02:28:52] NAVAR completed in 5.78 seconds
+[2025-12-21 02:28:52] 
+============================================================
+Algorithm: NAVAR
+TPR: 0.389 | FDR: 0.975 | SHD: 282
+Precision: 0.025 | Recall: 0.389 | F1: 0.047
+True Positives: 7 | False Positives: 271
+False Negatives: 11 | True Negatives: 961
+Predicted Edges: 278 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:52] 
+Running ACD...
+[2025-12-21 02:28:53] ACD completed in 0.94 seconds
+[2025-12-21 02:28:53] 
+============================================================
+Algorithm: ACD
+TPR: 0.500 | FDR: 0.971 | SHD: 307
+Precision: 0.029 | Recall: 0.500 | F1: 0.055
+True Positives: 9 | False Positives: 298
+False Negatives: 9 | True Negatives: 934
+Predicted Edges: 307 | True Edges: 18
+============================================================
+
+[2025-12-21 02:28:53] 
+Running oCSE...
+[2025-12-21 02:29:00] oCSE completed in 6.75 seconds
+[2025-12-21 02:29:00] 
+============================================================
+Algorithm: oCSE
+TPR: 0.444 | FDR: 0.000 | SHD: 10
+Precision: 1.000 | Recall: 0.444 | F1: 0.615
+True Positives: 8 | False Positives: 0
+False Negatives: 10 | True Negatives: 1232
+Predicted Edges: 8 | True Edges: 18
+============================================================
+
+[2025-12-21 02:29:00] 
+Running TCDF...
+[2025-12-21 02:32:15] TCDF completed in 194.81 seconds
+[2025-12-21 02:32:15] 
+============================================================
+Algorithm: TCDF
+TPR: 0.333 | FDR: 0.952 | SHD: 131
+Precision: 0.048 | Recall: 0.333 | F1: 0.084
+True Positives: 6 | False Positives: 119
+False Negatives: 12 | True Negatives: 1113
+Predicted Edges: 125 | True Edges: 18
+============================================================
+
+[2025-12-21 02:32:15] 
+Running NBCB...
+[2025-12-21 02:36:50] NBCB completed in 274.81 seconds
+[2025-12-21 02:36:50] 
+============================================================
+Algorithm: NBCB
+TPR: 1.000 | FDR: 0.979 | SHD: 858
+Precision: 0.021 | Recall: 1.000 | F1: 0.040
+True Positives: 18 | False Positives: 858
+False Negatives: 0 | True Negatives: 374
+Predicted Edges: 876 | True Edges: 18
+============================================================
+
+[2025-12-21 02:36:50] 
+Running PCTMI...
+[2025-12-21 02:37:03] PCTMI completed in 13.38 seconds
+[2025-12-21 02:37:03] 
+============================================================
+Algorithm: PCTMI
+TPR: 0.000 | FDR: 1.000 | SHD: 582
+Precision: 0.000 | Recall: 0.000 | F1: 0.000
+True Positives: 0 | False Positives: 564
+False Negatives: 18 | True Negatives: 668
+Predicted Edges: 564 | True Edges: 18
+============================================================
+
+[2025-12-21 02:37:03] 
+============================================================
+ALGORITHM COMPARISON
+============================================================
+Best by F1 Score: oCSE
+Best by TPR: PCMCI
+Best by FDR (lowest): oCSE
+Best by SHD (lowest): oCSE
+
+Ranked by F1 Score:
+1. oCSE: F1=0.615, TPR=0.444, FDR=0.000, SHD=10
+2. TCDF: F1=0.084, TPR=0.333, FDR=0.952, SHD=131
+3. ACD: F1=0.055, TPR=0.500, FDR=0.971, SHD=307
+4. NAVAR: F1=0.047, TPR=0.389, FDR=0.975, SHD=282
+5. GVAR: F1=0.046, TPR=0.222, FDR=0.974, SHD=166
+6. PCMCI: F1=0.040, TPR=1.000, FDR=0.979, SHD=858
+7. CDANs: F1=0.040, TPR=1.000, FDR=0.979, SHD=858
+8. NBCB: F1=0.040, TPR=1.000, FDR=0.979, SHD=858
+9. VarLiNGAM: F1=0.015, TPR=0.222, FDR=0.992, SHD=509
+10. CD-NOD: F1=0.000, TPR=0.000, FDR=1.000, SHD=234
+11. DYNOTEARS: F1=0.000, TPR=0.000, FDR=0.000, SHD=18
+12. NTS-NOTEARS: F1=0.000, TPR=0.000, FDR=0.000, SHD=18
+13. PCTMI: F1=0.000, TPR=0.000, FDR=1.000, SHD=582
+============================================================
+
+[2025-12-21 02:37:03] Results saved to results_finance.json
