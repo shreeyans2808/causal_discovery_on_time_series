@@ -72,7 +72,7 @@ class ExperimentRunner:
             ('CDANs', self._run_cdans),
             
             # FCM-based
-            ('VarLiNGAM', self._run_varlingam),
+            #('VarLiNGAM', self._run_varlingam),
             #('TiMINo', self._run_timino),
             
             # Gradient-based
@@ -86,7 +86,7 @@ class ExperimentRunner:
             
             # Miscellaneous
             ('oCSE', self._run_ocse),
-            ('TCDF', self._run_tcdf),
+            #('TCDF', self._run_tcdf),
             ('NBCB', self._run_nbcb),
             ('PCTMI', self._run_pctmi),
         ]
@@ -243,17 +243,16 @@ def main():
     #syn6_runner.run_all_algorithms()
     
     # ========== Experiment 2: fMRI Dataset ==========
-    print("\n\n[2/2] Loading finance dataset...")
+    print("\n\n[2/2] Loading dream dataset...")
     try:
-        fmri_data, fmri_net, fmri_meta = generator.load_fmri_data(
-            './finance_mat',
-            sim_index=1
+        fmri_data, fmri_net, fmri_meta = generator.load_dream_data(
+            './dream3/ecol21.mat',
         )
         print(f"fMRI ground truth type: {type(fmri_net)}")
         print(f"fMRI ground truth shape: {fmri_net.shape if hasattr(fmri_net, 'shape') else 'no shape'}")
         print(f"fMRI data loaded: shape {fmri_data.shape}")
         print(f"fMRI data type: {type(fmri_data)}")
-        print(f"Simulation {fmri_meta['sim_index']}: "
+        print(f"Simulation : "
               f"{fmri_meta['n_subjects']} subjects, "
               f"{fmri_meta['n_timepoints']} timepoints, "
               f"{fmri_meta['n_nodes']} nodes")
@@ -266,7 +265,7 @@ def main():
         }
         
         print("\n" + "-"*80)
-        print("Running experiments on fMRI dataset")
+        print("Running experiments on dream dataset")
         print("-"*80)
         
         # fmri_runner = ExperimentRunner(
@@ -291,7 +290,7 @@ def main():
             fmri_runner = ExperimentRunner(
                 data=fmri_data,
                 true_graph=fmri_graph,  # Use converted format
-                dataset_name='finance',
+                dataset_name='dream',
                 max_lag=1
             )
             fmri_runner.run_all_algorithms()

@@ -124,6 +124,59 @@ class DataGenerator:
         
         return data, true_network, metadata
     
+    from pathlib import Path
+
+
+    def load_dream_data(self, mat_file_path):
+        """
+        Load fMRI-style data from a single MAT file.
+    
+        Assumes MAT structure:
+            ts: (S, T, N)
+            net: (N, N)
+            Nsubjects
+            Ntimepoints
+            Nnodes
+    
+        Returns:
+            data: (T, N) time series for first subject
+            true_graph: (N, N) ground-truth network
+            metadata: dict
+        """
+    
+        mat_file_path = Path(mat_file_path)
+    
+        if not mat_file_path.exists():
+            raise FileNotFoundError(f"MAT file not found: {mat_file_path}")
+    
+        # Load MATLAB file
+        mat_data = sio.loadmat(str(mat_file_path))
+    
+        # Extract fields
+        ts = mat_data["ts"]          # (S, T, N)
+        net = mat_data["net"]        # (N, N)
+    
+        Nsubjects = int(mat_data["Nsubjects"][0, 0])
+        Ntimepoints = int(mat_data["Ntimepoints"][0, 0])
+        Nnodes = int(mat_data["Nnodes"][0, 0])
+    
+        # --- Get first subject ---
+        # ts is (S, T, N)
+        data = ts[0, :Ntimepoints, :]
+    
+        # --- Ground truth ---
+        true_network = net
+    
+        metadata = {
+            "n_subjects": Nsubjects,
+            "n_timepoints": Ntimepoints,
+            "n_nodes": Nnodes,
+            "layout": "S,T,N"
+        }
+    
+        return data, true_network, metadata
+
+    
     def save_data(self, data, filename, metadata=None):
         """Save generated data to file"""
         np.save(filename, data)
